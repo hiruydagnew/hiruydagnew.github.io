@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+     <style>
+      body {
+        background-color:#afc2a3;
+      }
+    </style>
+     <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+   <center>
+     <h1>My Favorite Tool Songs</h1>
+     <div id="plot"></div>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/Pj1Od4oPVVs?si=v9BswIWeXRXpyegC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/EcyMRYFGGm8?si=CgRu19F4ulFEOBgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/HGDONU6doh8?si=pmuPIFDi7VsrsEWS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <p><a href="index.html">Return to the homepage</a></p>
+       <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+      var songs=["1988 Grammy Awards", "You Rock My World", "Billie Jean"];
+      var views=[165217,2602449,40770904];
+      var trace={
+        x:songs,
+        y:views,
+        type:"bar"
+      };
+      var data=[trace];
+      var layout={title: "My Favorite Tool Songs"};
+      Plotly.newPlot("plot",data,layout);
+    </script>
+  </body>
+</html>
