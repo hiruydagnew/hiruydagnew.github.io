@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Hiruy's Website</title>
+    <title>Plotly Demo</title>
      <style>
       body {
         background-color:#afc2a3;
@@ -10,9 +10,21 @@
   </head>
   <body>
    <center>
+     <h1>My First Plotly Chart</h1>
+     <div id="plot"></div>
        <p><a href="index.html">Return to the homepage</a></p>
        <hr>
       <p>&copy; STEM Prep 2026</p>
     </center>
+    <script>
+      var trace={
+        x: [1,2,3,4,5],
+        y: [7,10,11,9,54],
+        mode: "lines"
+      };
+      var data=[trace];
+      var layout={title: "My First Plot"};
+      Plotly.newPlot("plot",data,layout);
+    </script>
   </body>
 </html>
