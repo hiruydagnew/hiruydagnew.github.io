@@ -12,4 +12,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Ethiopia!</p>").addTo(map);
-var marker1 = L.circle(place1,{color: "black", fillColor: "#c96979", radius: 80}).addTo(map);
+var marker1 = L.circle(place1,{color: "black", fillColor: "#c96979", radius: 130}).addTo(map);
