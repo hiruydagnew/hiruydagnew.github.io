@@ -13,5 +13,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Ethiopia!</p>").addTo(map);
 var marker1 = L.circle(place1,{color: "black", fillColor: "#c96979", radius: 130})bindPopup("<p>Hello, from Lalibela!</p>").addTo(map);
-var marker2 = L.circle(place1,{color: "black", fillColor: "#73b2d1", radius: 130})bindPopup("<p>Hello, from Fasilides!</p>").addTo(map);
-var marker3 = L.circle(place1,{color: "black", fillColor: "#d9b077", radius: 130})bindPopup("<p>Hello, from Aksum!</p>").addTo(map);
+var marker2 = L.circle(place2,{color: "black", fillColor: "#73b2d1", radius: 130})bindPopup("<p>Hello, from Fasilides!</p>").addTo(map);
+var marker3 = L.circle(place3,{color: "black", fillColor: "#d9b077", radius: 130})bindPopup("<p>Hello, from Aksum!</p>").addTo(map);
